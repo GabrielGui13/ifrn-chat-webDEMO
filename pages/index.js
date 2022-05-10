@@ -3,14 +3,8 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
-  function setAlert() {
-    const check = confirm('Você é Fonti?')
-    if (check) alert("Fonti seu viado")
-    else alert('ENtão fodase')
-  }
-
   return (
-    <div className={styles.container} onLoad={setAlert}>
+    <div className={styles.container}>
       <Head>
         <title>CHAT OFICIAL DO GPLAYS</title>
         <meta name="description" content="Entre imediatamente no chat do gplays" />
